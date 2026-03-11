@@ -4,27 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrintCraft · Instant printing</title>
-  <!-- Font Awesome 6 (free) for icons -->
+
    <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <!-- header -->
+
     <nav class="navbar">
       <div class="logo">
         <i class="fas fa-print"></i>
         <span>PrintCraft <small>• since 2026</small></span>
       </div>
+      
+      <!-- Hidden checkbox for mobile menu -->
+      <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox">
+      
+      <!-- Menu icon (label for checkbox) -->
+      <label for="menuToggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+      
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="t-shirts.html">T‑shirts</a></li>
         <li><a href="flyers.html">Flyers</a></li>
         <li><a href="cups.html">Cups</a></li>
         <li><a href="cards.html">Cards</a></li>
-        <li><a href="#">More</a></li>
+        <!-- Mobile buttons -->
+        <li class="mobile-only"><a href="t-shirts.html" class="btn-primary mobile-btn"><i class="fas fa-droplet"></i> Start your order</a></li>
+        <li class="mobile-only"><a href="https://wa.me/0116318338?text=Hello%2C%20I'd%20like%20to%20request%20a%20quote%20for%20printing%20services" class="btn-outline mobile-btn" target="_blank"><i class="fas fa-palette"></i> Request quote</a></li>
       </ul>
-      <button class="btn-outline"><i class="fas fa-palette"></i> Request quote</button>
+      
+      <!-- Desktop buttons -->
+      <div class="desktop-buttons">
+        <a href="t-shirts.html" class="btn-primary"><i class="fas fa-droplet"></i> Start your order</a>
+        <a href="https://wa.me/0116318338?text=Hello%2C%20I'd%20like%20to%20request%20a%20quote%20for%20printing%20services" class="btn-outline" target="_blank"><i class="fas fa-palette"></i> Request quote</a>
+      </div>
     </nav>
 
     <!-- hero section -->
@@ -34,34 +50,27 @@
         <h1>Print that <i>pops</i> <br>on tees, cups & cards</h1>
         <p>From custom t‑shirts to high‑volume flyers, we turn your designs into reality. Fast turnaround, eco‑friendly inks.</p>
         <div class="hero-cta">
-          <a href="#" class="btn-primary"><i class="fas fa-droplet"></i> Start your order</a>
-          <button class="btn-outline">See catalogue</button>
+          <a href="t-shirts.html" class="btn-primary"><i class="fas fa-droplet"></i> Start your order</a>
+          <a href="t-shirts.html" class="btn-outline">See catalogue</a>
         </div>
       </div>
       <div class="hero-image">
         <div class="print-mock">
           <div class="mock-grid">
-            <div class="mock-item"><i class="fas fa-tshirt"></i><span>tees</span></div>
-            <div class="mock-item"><i class="fas fa-scroll"></i><span>flyers</span></div>
-            <div class="mock-item"><i class="fas fa-mug-hot"></i><span>cups</span></div>
-            <div class="mock-item"><i class="fas fa-id-card"></i><span>cards</span></div>
+            <a href="#" class="mock-item"><i class="fas fa-tshirt"></i><span>shirts</span></a>
+            <a href="#" class="mock-item"><i class="fas fa-scroll"></i><span>flyers</span></a>
+            <a href="#" class="mock-item"><i class="fas fa-mug-hot"></i><span>cups</span></a>
+            <a href="#" class="mock-item"><i class="fas fa-id-card"></i><span>cards</span></a>
           </div>
         </div>
         <div class="image-note">
-          <i class="fas fa-check-circle" style="color:#c44536;"></i> 100+ paper & textile options
+          <i class="fas fa-check-circle" style="color:#c44536;"></i> We offer free delivery across Narok and surrounding areas.
         </div>
       </div>
     </div>
 
-    <!-- specialty tags -->
-    <div class="specialties">
-      <div class="specialty-item"><i class="fas fa-tshirt"></i> T‑shirts</div>
-      <div class="specialty-item"><i class="fas fa-scroll"></i> Flyers</div>
-      <div class="specialty-item"><i class="fas fa-mug-hot"></i> Cups</div>
-      <div class="specialty-item"><i class="fas fa-id-card"></i> Cards</div>
-    </div>
 
-    <!-- services grid – preview of dedicated pages -->
+    <!-- services grid -->
     <div class="section-header">
       <h2>your vision, perfectly printed</h2>
       <p>Explore our specialised services — each with its own dedicated page</p>
@@ -73,28 +82,28 @@
         <div class="service-icon"><i class="fas fa-tshirt"></i></div>
         <h3>T‑shirts</h3>
         <p>Screen, DTG & sublimation. Soft handfeel, vibrant colors.</p>
-        <a href="#" class="card-link">see t‑shirt page <i class="fas fa-arrow-right"></i></a>
+        <a href="t-shirts.html" class="card-link">see t‑shirt page <i class="fas fa-arrow-right"></i></a>
       </div>
       <!-- FLYERS card -->
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-scroll"></i></div>
         <h3>Flyers</h3>
         <p>From A6 to A2, gloss or recycled — we nail it.</p>
-        <a href="#" class="card-link">flyer printing <i class="fas fa-arrow-right"></i></a>
+        <a href="flyers.html" class="card-link">flyer printing <i class="fas fa-arrow-right"></i></a>
       </div>
       <!-- CUPS card -->
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-mug-hot"></i></div>
         <h3>Cups & mugs</h3>
         <p>Ceramic, enamel, travel cups. Full‑color sublimation.</p>
-        <a href="#" class="card-link">cup collection <i class="fas fa-arrow-right"></i></a>
+        <a href="cups.html" class="card-link">cup collection <i class="fas fa-arrow-right"></i></a>
       </div>
       <!-- CARDS card -->
       <div class="service-card">
         <div class="service-icon"><i class="fas fa-id-card"></i></div>
         <h3>Cards</h3>
         <p>Business cards, invitations, postcards — thick stock, foil.</p>
-        <a href="#" class="card-link">cards & more <i class="fas fa-arrow-right"></i></a>
+        <a href="cards.html" class="card-link">cards & more <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
 
@@ -102,56 +111,55 @@
     <div class="feature-row">
       <div class="feature-text">
         <h3>we speak ink & pixels</h3>
-        <p>We’ve been printing for over a decade — every material, every finish.</p>
+        <p>Expert analysis in every material, every finish.</p>
         <ul>
           <li><i class="fas fa-check-circle"></i> 48h express on flyers & cards</li>
           <li><i class="fas fa-check-circle"></i> eco‑friendly waterbased inks</li>
           <li><i class="fas fa-check-circle"></i> free artwork check + mockup</li>
+          <li><i class="fas fa-check-circle"></i> Free delivery across Narok and surrounding areas.</li>
           <li><i class="fas fa-check-circle"></i> bulk discounts (100+ pieces)</li>
         </ul>
       </div>
       <div class="feature-stats">
         <div class="stat">
-          <div class="number">2k+</div>
+          <div class="number">20+</div>
           <div>happy clients</div>
         </div>
         <div class="stat">
-          <div class="number">15k</div>
+          <div class="number">20+</div>
           <div>cups printed</div>
         </div>
         <div class="stat">
-          <div class="number">500+</div>
+          <div class="number">50+</div>
           <div>tee designs</div>
         </div>
       </div>
     </div>
 
-    <!-- strong call to action (dedicated pages link) -->
+    <!-- CTA banner -->
     <div class="cta-banner">
       <h2><i class="fas fa-thumbs-up"></i> Ready to print your t‑shirts, flyers, cups or cards?</h2>
-      <button class="cta-button">shop all products <i class="fas fa-arrow-right"></i></button>
+      <a href="t-shirts.html" class="cta-button">shop all products <i class="fas fa-arrow-right"></i></a>
     </div>
 
-    <!-- footer with dedicated page links -->
     <footer class="footer">
       <div class="logo">
         <i class="fas fa-print"></i>
         <span>PrintCraft</span>
       </div>
       <div class="footer-links">
-        <a href="#">T‑shirts</a>
-        <a href="#">Flyers</a>
-        <a href="#">Cups</a>
-        <a href="#">Cards</a>
-        <a href="#">Contact</a>
+        <a href="t-shirts.html">T‑shirts</a>
+        <a href="flyers.html">Flyers</a>
+        <a href="cups.html">Cups</a>
+        <a href="cards.html">Cards</a>
+        <a href="https://wa.me/0116318338?text=Hello%2C%20I'd%20like%20to%20contact%20PrintCraft" target="_blank">Contact</a>
       </div>
       <div class="social">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-pinterest"></i>
-        <i class="fab fa-facebook-f"></i>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
       </div>
     </footer>
-  </div> <!-- container end -->
-  <!-- small note: all "dedicated pages" placeholders lead to # but show the concept -->
+  </div>
 </body>
 </html>
