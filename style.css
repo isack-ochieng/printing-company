@@ -1,4 +1,4 @@
-    * {
+   * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -6,9 +6,8 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
       background-color: #fbfcf8;
-      color: black;
+      color: #1e2b2f;
       line-height: 1.5;
     }
 
@@ -19,21 +18,15 @@
 
     .container {
       max-width: 1280px;
-      margin: 0;
+      margin: 0 auto;
       padding: 0 2rem;
-
     }
 
     /* header / navigation */
     .navbar {
       display: flex;
-      align-items: left;
+      align-items: center;
       justify-content: space-between;
-      width: 100%;
-      position: fixed;
-      background-color: #777ba9;
-      top: 0;
-      z-index: 100;
       padding: 1.5rem 0;
       flex-wrap: wrap;
       gap: 1.5rem;
@@ -41,7 +34,7 @@
 
     .logo {
       display: flex;
-      align-items: left;
+      align-items: center;
       gap: 0.65rem;
     }
 
@@ -129,6 +122,7 @@
       margin-bottom: 1.5rem;
       letter-spacing: 0.3px;
     }
+    .
 
     .hero-content h1 {
       font-size: 3.5rem;
@@ -161,7 +155,7 @@
     .btn-primary {
       background: #c44536;
       border: none;
-       color: white;
+      color: white;
       font-weight: 600;
       padding: 0.9rem 2.4rem;
       border-radius: 40px;
@@ -200,7 +194,7 @@
     }
 
     .hero-image .image-note {
-      background:purple;
+      background: white;
       padding: 0.5rem 1rem;
       border-radius: 50px;
       display: inline-block;
@@ -338,7 +332,89 @@
       transform: translateX(4px);
     }
 
-    /* featured promo (why choose us) */
+    /* Styles for the t-shirts things  */
+.page-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1e2b2f;
+    margin: 2rem 0 2.5rem;
+    letter-spacing: -0.02em;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+/* Reusing the cards */
+.products-grid .service-card {
+    padding: 1.5rem 1.5rem 2rem;
+    cursor: pointer;
+}
+
+.products-grid .service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 1.2rem;
+    background: #f5f0ed;
+    border: 1px solid #f1e4df;
+    transition: transform 0.3s ease;
+}
+
+.products-grid .service-card:hover img {
+    transform: scale(1.02);
+}
+
+.products-grid .service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.products-grid .service-card p {
+    color: #526a73;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.products-grid .service-card p:last-of-type {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #c44536;
+    margin: 0.5rem 0 1.2rem;
+    background: #fdf3f0;
+    padding: 0.2rem 1.2rem;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.products-grid .service-card button {
+    background: #c44536;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 12px -4px rgba(196, 69, 54, 0.3);
+    width: 100%;
+    max-width: 180px;
+}
+
+.products-grid .service-card button:hover {
+    background: #a73527;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -6px rgba(196, 69, 54, 0.5);
+}
+    /* featured promo  */
     .feature-row {
       display: flex;
       gap: 3rem;
@@ -496,7 +572,7 @@
       color: #c44536;
     }
 
-    /* placeholder image style – pure css shape (representative) */
+    /* placeholder image style */
     .print-mock {
       background: #ffffffd6;
       border-radius: 42% 58% 70% 30% / 44% 38% 62% 56%;
@@ -550,13 +626,6 @@
         flex-direction: column;
         text-align: center;
       }
-    .service-card{
-      display: flex;
-      color: #a73527;
+      
     }
-     .product{
-      color: #a73527;
-      display: grid;
-     }
-
-    }
+    
