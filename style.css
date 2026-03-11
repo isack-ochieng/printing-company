@@ -6,8 +6,9 @@
     }
 
     body {
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #fbfcf8;
-      color: #1e2b2f;
+      color: black;
       line-height: 1.5;
     }
 
@@ -18,14 +19,15 @@
 
     .container {
       max-width: 1280px;
-      margin: 0 auto;
+      margin: 0;
       padding: 0 2rem;
+
     }
 
     /* header / navigation */
     .navbar {
       display: flex;
-      align-items: center;
+      align-items: left;
       justify-content: space-between;
       width: 100%;
       position: fixed;
@@ -39,7 +41,7 @@
 
     .logo {
       display: flex;
-      align-items: center;
+      align-items: left;
       gap: 0.65rem;
     }
 
@@ -159,7 +161,7 @@
     .btn-primary {
       background: #c44536;
       border: none;
-      color: white;
+       color: white;
       font-weight: 600;
       padding: 0.9rem 2.4rem;
       border-radius: 40px;
@@ -548,4 +550,13 @@
         flex-direction: column;
         text-align: center;
       }
+    .service-card{
+      display: flex;
+      color: #a73527;
+    }
+     .product{
+      color: #a73527;
+      display: grid;
+     }
+
     }
